@@ -21,6 +21,7 @@ public class toDelete {
  public static void main(String [] args) throws SQLException{
   DBFacade dbf = new DBFacade();
   
+  dbf.addPlayer(new Player ("Ter Stegen","FC Barcelona",1));
     
 
 

@@ -7,6 +7,7 @@ package dbaccess;
 
 import entity.Player;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -40,16 +41,21 @@ public ArrayList<Player> getPlayerList() throws SQLException{
     
     }
 
-public void addPlayer(Player p){
+public void addPlayer(Player p) throws SQLException{
+String sqlString = "insert into playerList (name, club,shirtNumber) values (?,?,?);";
+ try ( Connection con = DB.getConnection();
+      PreparedStatement stmt = con.prepareStatement( sqlString ) ) {
+            stmt.setString( 1, p.getName() );
+            stmt.setString( 2, p.getClub() );
+            stmt.setInt( 3, p.getShirtNumber() );
+        int rowsAffected = stmt.executeUpdate();
+            if ( rowsAffected > 0 ) {
+                System.out.println( "Element inserted" );
+            } else {
+                System.out.println( "No change" );
+            }
 
-
-
-
-
-}
-
-    
-
+}}
 
 
 }

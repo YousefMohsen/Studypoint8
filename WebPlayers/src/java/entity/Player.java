@@ -22,6 +22,11 @@ public class Player {
         this.shirtNumber = shirtNumber;
     }
 
+    public Player(String name, String club, int shirtNumber) {
+       this.name = name;
+        this.club = club;
+        this.shirtNumber = shirtNumber;    }
+
     
     
     

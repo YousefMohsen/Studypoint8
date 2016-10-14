@@ -23,4 +23,9 @@ public class DomainFacade {
         
         return dbf.getPlayerList();
     }
+
+public void addPlayer(Player p) throws SQLException{
+dbf.addPlayer(p);
+}
+
 }
