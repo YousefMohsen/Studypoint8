@@ -40,7 +40,16 @@ public ArrayList<Player> getPlayerList() throws SQLException{
     
     }
 
+public void addPlayer(Player p){
 
+
+
+
+
+}
 
     
+
+
+
 }
