@@ -11,9 +11,9 @@ import java.sql.SQLException;
 public class DB {
 
     private static String driver = "com.mysql.jdbc.Driver";
-    private static String url = "jdbc:mysql://localhost/test";
-    private static String user = "root";
-    private static String password = "yousef77";
+    private static String url = "jdbc:mysql://46.101.215.179/players";
+    private static String user = "myuser";
+    private static String password = "mypass";
 
     public static Connection getConnection() {
         Connection conn = null;
