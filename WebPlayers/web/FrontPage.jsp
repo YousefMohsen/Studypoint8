@@ -39,7 +39,7 @@
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
     <ul class="nav navbar-nav">
-      <li ><a href="Index.html">Home</a></li>
+      <li ><a href="index.html">Home</a></li>
       <li class="active"><a href="FrontPage.jsp">Se players</a></li>
       <li><a href="#">Page 2</a></li> 
       <li><a href="#">Page 3</a></li> 
