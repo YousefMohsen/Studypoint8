@@ -3,8 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/web/FrontPage.jsp</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/domain/DomainFacade.java</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/toDelete.java</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/entity/Player.java</file>
             <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/Servlet/NewServlet.java</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/web/FrontPage.jsp</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/dbaccess/DB.java</file>
+            <file>file:/Users/Yousinho/Desktop/Studypoint%208/WebPlayers/src/java/dbaccess/DBFacade.java</file>
         </group>
     </open-files>
 </project-private>
