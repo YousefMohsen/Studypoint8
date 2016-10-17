@@ -56,6 +56,7 @@
   <div class="col-sm-6">
       <h2>Current players</h2>
              <form action="NewServlet" method="POST"> 
+                 <input type="hidden" name="origin" value="addPlayer">
       <table class="table table-bordered">
     <thead>
       <tr>
@@ -82,10 +83,10 @@
         
         
         
-        out.println("</tr>");
+     //   out.println("</tr>");
           %>     
- <input type="submit" class="btn btn-danger" value="X" name="id" />        
-
+ <td> <input type="submit" class="btn btn-danger" value="X" name="id" /></td>        
+</tr>
  <input type="hidden" name="deletePlayer" value=<%= pl.getId() %>>
 
 <input type="hidden" name="origin" value="deletePlayer">
@@ -115,7 +116,7 @@
     </tbody>
     
   </table>
-<input type="hidden" name="origin" value="addPlayer">
+
 
           </form>
 

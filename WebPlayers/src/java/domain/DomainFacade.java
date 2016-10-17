@@ -29,9 +29,9 @@ dbf.addPlayer(p);
 }
 
 
-public void deletePlayer(int index){
+public void deletePlayer(int index) throws SQLException{
 
-
+dbf.deletePlayer(index);
 }
 
 }

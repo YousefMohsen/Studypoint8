@@ -44,7 +44,7 @@ public class NewServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
              HttpSession session = request.getSession();    
         String origin = request.getParameter("origin");
-            
+         
             if(origin.equals("addPlayer")){
       
             String name = request.getParameter("name");
@@ -57,9 +57,8 @@ public class NewServlet extends HttpServlet {
         response.sendRedirect("FrontPage.jsp");
             } else if(origin.equals("deletePlayer")){//if delete
       int deletePlayer = Integer.parseInt(request.getParameter("deletePlayer"));
-out.print("int " +deletePlayer );
-               // df.deletePlayer(deletePlayer);
-            //  response.sendRedirect("FrontPage.jsp");
+              df.deletePlayer(deletePlayer);
+            response.sendRedirect("FrontPage.jsp");
             }
             
         
