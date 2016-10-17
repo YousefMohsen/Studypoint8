@@ -67,12 +67,31 @@
   
     <tbody>
         <% 
+            
         for (Player pl : players) {
+    %>  <form action="NewServlet" method="POST">
+        
+        
+        
+        <% 
+
             out.println("<tr>");
         out.println("<td>" + pl.getName()+"</td>");
         out.println("<td>" + pl.getClub()+"</td>");
         out.println("<td>" + pl.getShirtNumber()+"</td>");
+        
+        
+        
         out.println("</tr>");
+          %>     
+ <input type="submit" class="btn btn-danger" value="X" name="id" />        
+
+ <input type="hidden" name="deletePlayer" value=<%= pl.getId() %>>
+
+<input type="hidden" name="origin" value="deletePlayer">
+
+    </form>
+        <%
         }
         
 

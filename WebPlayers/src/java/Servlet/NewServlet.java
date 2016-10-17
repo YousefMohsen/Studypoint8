@@ -43,7 +43,6 @@ public class NewServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
              HttpSession session = request.getSession();    
-
         String origin = request.getParameter("origin");
             
             if(origin.equals("addPlayer")){
@@ -56,14 +55,19 @@ public class NewServlet extends HttpServlet {
             df.addPlayer(new Player(name,club,shirtNumber));
             
         response.sendRedirect("FrontPage.jsp");
-            } else{
-            
-      response.sendRedirect("FrontPage.jsp");
-
-            
+            } else if(origin.equals("deletePlayer")){//if delete
+      int deletePlayer = Integer.parseInt(request.getParameter("deletePlayer"));
+out.print("int " +deletePlayer );
+               // df.deletePlayer(deletePlayer);
+            //  response.sendRedirect("FrontPage.jsp");
             }
-        }
+            
+        
+            
     }
+        
+        }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

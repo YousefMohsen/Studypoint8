@@ -28,4 +28,10 @@ public void addPlayer(Player p) throws SQLException{
 dbf.addPlayer(p);
 }
 
+
+public void deletePlayer(int index){
+
+
+}
+
 }
