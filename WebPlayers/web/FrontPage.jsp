@@ -56,7 +56,8 @@
   <div class="col-sm-6">
       <h2>Current players</h2>
              <form action="NewServlet" method="POST"> 
-                 <input type="hidden" name="origin" value="addPlayer">
+                 
+  <input type="hidden" name="origin" value="addPlayer">
       <table class="table table-bordered">
     <thead>
       <tr>
@@ -83,7 +84,7 @@
         
         
         
-     //   out.println("</tr>");
+  
           %>     
  <td> <input type="submit" class="btn btn-danger" value="X" name="id" /></td>        
 </tr>
@@ -108,7 +109,7 @@
             <td> <input type="text" name="shirtNumber" value="" /> </td>  
         </tr>
          <tr>
-<td> <input type="submit" value="Add Player" name="add"/> </td>   
+<td> <input type="submit" class="btn btn-success" value="Add Player" name="add"/> </td>   
          
         </tr>
       

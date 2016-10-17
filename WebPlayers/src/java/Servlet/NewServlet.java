@@ -44,7 +44,7 @@ public class NewServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
              HttpSession session = request.getSession();    
         String origin = request.getParameter("origin");
-         
+
             if(origin.equals("addPlayer")){
       
             String name = request.getParameter("name");
